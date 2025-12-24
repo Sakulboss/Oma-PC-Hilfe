@@ -18,7 +18,7 @@
 
         <div id="step-1" class="card hidden">
             <h2>Aufgabe 1: Klicken 🖱️</h2>
-            <p>Bewege die Maus (oder den Finger) auf den grünen Knopf unten und klicke einmal darauf.</p>
+            <p> Bitte klicke auf den Knopf! </p>
             <button class="btn success" onclick="nextStep('step-2')">Hier klicken!</button>
         </div>
 
@@ -32,13 +32,13 @@
 
         <div id="step-3" class="card hidden">
             <h2>Aufgabe 3: Wissen 🧠</h2>
-            <p>Welches dieser Symbole bedeutet <strong>"Internet / WLAN"</strong>?</p>
+            <p>Welches dieser Symbole bedeutet <strong>"WLAN"</strong>?</p>
             <p>Klicke auf das richtige Symbol.</p>
             
             <div class="icon-grid">
-                <button class="icon-btn" onclick="wrongAnswer()">🔋<br>Batterie</button>
-                <button class="icon-btn" onclick="finishQuiz()">📶<br>WLAN</button>
-                <button class="icon-btn" onclick="wrongAnswer()">✂️<br>Schere</button>
+                <button class="icon-btn" onclick="wrongAnswer()">🔋</button>
+                <button class="icon-btn" onclick="finishQuiz()">🛜</button>
+                <button class="icon-btn" onclick="wrongAnswer()">📶</button>
             </div>
             <p id="error-msg" class="error hidden">Das war leider nicht richtig. Probier es nochmal!</p>
         </div>
@@ -51,7 +51,7 @@
                 <p>den Computer-Test erfolgreich bestanden hat.</p>
                 <hr>
                 <p class="small">Berechtigung:</p>
-                <p><strong>Lebenslange PC-Hilfe von Lukas</strong></p>
+                <p><strong>1 Jahr lang PC-Hilfe von Lukas</strong></p>
                 <p class="signature">Ausgestellt am: <span id="date"></span></p>
             </div>
             <button class="btn primary" style="margin-top: 20px;" onclick="location.reload()">Neustart</button>
