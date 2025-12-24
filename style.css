@@ -1,0 +1,100 @@
+/* Grundlegende Einstellungen für gute Lesbarkeit */
+body {
+    font-family: 'Verdana', sans-serif; /* Serifenlose Schrift ist leichter zu lesen */
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Das Karten-Design */
+.card {
+    background: white;
+    padding: 40px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+h1 { color: #2c3e50; margin-bottom: 20px; }
+h2 { color: #34495e; }
+p { font-size: 1.2rem; line-height: 1.6; margin-bottom: 30px; }
+
+/* Buttons groß und klickbar machen */
+.btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.btn:active { transform: scale(0.95); }
+
+.primary { background-color: #3498db; color: white; }
+.success { background-color: #2ecc71; color: white; font-weight: bold; font-size: 1.4rem; }
+.disabled { background-color: #bdc3c7; cursor: not-allowed; }
+
+/* Eingabefeld */
+input {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+}
+
+/* Icons für Aufgabe 3 */
+.icon-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.icon-btn {
+    background: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    flex: 1;
+    min-width: 100px;
+}
+
+.icon-btn:hover { background: #d5dbdb; }
+
+.error { color: #e74c3c; font-weight: bold; }
+
+/* Zertifikat Styling */
+.certificate .border {
+    border: 5px double #f1c40f; /* Goldener Rand */
+    padding: 20px;
+    border-radius: 10px;
+    background: #fffdf0;
+}
+.certificate h1 { color: #d35400; }
+.certificate h2 { font-size: 2.5rem; color: #2c3e50; text-transform: uppercase; margin: 10px 0; }
+.signature { margin-top: 30px; font-style: italic; color: #7f8c8d; }
+
+/* Hilfsklassen zum Ein/Ausblenden */
+.hidden { display: none; }
+.active { display: block; animation: fadeIn 0.5s; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
